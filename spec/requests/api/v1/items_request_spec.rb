@@ -4,7 +4,7 @@ describe "Items API" do
   it "sends a list of items" do
     create_list(:item, 3)
 
-    get '/api/v1/items'
+    get "/api/v1/items"
 
     expect(response).to be_success
 
@@ -16,5 +16,17 @@ describe "Items API" do
     expect(item).to have_key("name")
     expect(item).to have_key("description")
     expect(item).to have_key("unit_price")
+  end
+
+  it "can get one item by id" do
+    id = create(:item).id
+
+    get "/api/v1/items/#{id}"
+
+    expect(response).to be_success
+
+    item = JSON.parse(response.body)
+
+    expect(item['id']).to eq(id)
   end
 end
