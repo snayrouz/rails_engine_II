@@ -9,7 +9,12 @@ describe "Items API" do
     expect(response).to be_success
 
     items = JSON.parse(response.body)
+    item = items.first
 
     expect(items.count).to eq(3)
+    expect(item).to have_key("id")
+    expect(item).to have_key("name")
+    expect(item).to have_key("description")
+    expect(item).to have_key("unit_price")
   end
 end
