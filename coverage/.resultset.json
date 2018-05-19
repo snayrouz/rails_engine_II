@@ -1,0 +1,219 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/samnayrouz/Projects/rails_engine_II/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/application.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/boot.rb": [
+        1,
+        null,
+        1
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/environments/test.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/assets.rb": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/cookies_serializer.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/config/routes.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/models/item.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/models/merchant.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1526674099
+  }
+}
