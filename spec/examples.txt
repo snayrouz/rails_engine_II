@@ -2,5 +2,5 @@ example_id                                        | status  | run_time        |
 ------------------------------------------------- | ------- | --------------- |
 ./spec/models/item_spec.rb[1:1]                   | pending | 0.00001 seconds |
 ./spec/models/merchant_spec.rb[1:1]               | pending | 0.00001 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:1] | passed  | 0.06917 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:2] | passed  | 0.01456 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:1] | passed  | 0.01568 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:2] | passed  | 0.16538 seconds |
