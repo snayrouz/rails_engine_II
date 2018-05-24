@@ -15,4 +15,16 @@ RSpec.describe "Merchants API" do
     expect(merchant).to have_key("id")
     expect(merchant).to have_key("name")
   end
+
+  it "can show a merchant by id" do
+    id = create(:merchant).id
+
+    get "/api/v1/merchants/#{id}"
+
+    expect(response).to be_success
+
+    merchant = JSON.parse(response.body)
+
+    expect(merchant['id']).to eq(id)
+  end
 end
