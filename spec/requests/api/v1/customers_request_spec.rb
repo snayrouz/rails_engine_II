@@ -18,7 +18,7 @@ RSpec.describe "Customers API" do
   end
 
   it "can get one customer by id" do
-    id = create(:item).id
+    id = create(:customer).id
 
     get "/api/v1/customers/#{id}"
 
@@ -26,6 +26,6 @@ RSpec.describe "Customers API" do
 
     customer = JSON.parse(response.body)
 
-    expect(customer['id']).to eq[id]
+    expect(customer['id']).to eq(id)
   end
 end
