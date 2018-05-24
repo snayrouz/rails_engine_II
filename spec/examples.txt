@@ -1,6 +1,7 @@
-example_id                                        | status | run_time        |
-------------------------------------------------- | ------ | --------------- |
-./spec/models/item_spec.rb[1:1:1]                 | passed | 0.00485 seconds |
-./spec/models/merchant_spec.rb[1:1:1]             | passed | 0.01004 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:1] | passed | 0.06265 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:2] | passed | 0.01599 seconds |
+example_id                                            | status | run_time        |
+----------------------------------------------------- | ------ | --------------- |
+./spec/models/item_spec.rb[1:1:1]                     | passed | 0.00731 seconds |
+./spec/models/merchant_spec.rb[1:1:1]                 | passed | 0.0018 seconds  |
+./spec/requests/api/v1/items_request_spec.rb[1:1]     | passed | 0.02595 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:2]     | passed | 0.01926 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:1] | passed | 0.06967 seconds |
