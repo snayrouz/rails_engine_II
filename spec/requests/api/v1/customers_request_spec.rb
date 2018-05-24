@@ -16,4 +16,16 @@ RSpec.describe "Customers API" do
     expect(customer).to have_key("first_name")
     expect(customer).to have_key("last_name")
   end
+
+  it "can get one customer by id" do
+    id = create(:item).id
+
+    get "/api/v1/customers/#{id}"
+
+    expect(response).to be_success
+
+    customer = JSON.parse(response.body)
+
+    expect(customer['id']).to eq[id]
+  end
 end
