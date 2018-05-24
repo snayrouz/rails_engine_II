@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcc42c4c-fd78-4a33-a530-5b74223e94bd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/requests/api/v1/customers_request_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" afterPath="$PROJECT_DIR$/coverage/.resultset.json" />
       <change beforePath="$PROJECT_DIR$/coverage/index.html" afterPath="$PROJECT_DIR$/coverage/index.html" />
-      <change beforePath="$PROJECT_DIR$/lib/tasks/import_csv.rake" afterPath="$PROJECT_DIR$/lib/tasks/import_csv.rake" />
       <change beforePath="$PROJECT_DIR$/spec/examples.txt" afterPath="$PROJECT_DIR$/spec/examples.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -50,7 +48,7 @@
             <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
-                  <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -90,7 +88,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="merchants_request_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="merchants_request_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/requests/api/v1/merchants_request_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="435">
@@ -100,11 +98,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -151,12 +149,12 @@
         <option value="$PROJECT_DIR$/spec/models/merchant_spec.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/spec/requests/api/v1/merchants_request_spec.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/merchants_controller.rb" />
         <option value="$PROJECT_DIR$/spec/requests/api/v1/customers_request_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/spec/factories/customers.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/import_csv.rake" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -362,7 +360,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6897000" />
+    <option name="totallyTimeSpent" value="6971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -663,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -746,7 +736,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -795,6 +785,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
