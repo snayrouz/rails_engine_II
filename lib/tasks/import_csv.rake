@@ -1,5 +1,7 @@
 require 'csv'
 
+desc "Imports a CSV file into an ActiveRecord table"
+
 namespace :import_csv do
 
   task merchants: :environment do
@@ -18,5 +20,13 @@ namespace :import_csv do
     end
   end
 
-  task all: [:merchants, :items]
+  task customers: :environment do
+    csv_text = File.read('./data/customers.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Customer.create!(row.to_hash)
+    end
+  end
+
+  task all: [:merchants, :items, :customers]
 end

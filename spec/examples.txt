@@ -1,8 +1,9 @@
 example_id                                            | status | run_time        |
 ----------------------------------------------------- | ------ | --------------- |
-./spec/models/item_spec.rb[1:1:1]                     | passed | 0.01008 seconds |
-./spec/models/merchant_spec.rb[1:1:1]                 | passed | 0.00159 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:1]     | passed | 0.01571 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:2]     | passed | 0.01909 seconds |
-./spec/requests/api/v1/merchants_request_spec.rb[1:1] | passed | 0.06334 seconds |
-./spec/requests/api/v1/merchants_request_spec.rb[1:2] | passed | 0.01526 seconds |
+./spec/models/item_spec.rb[1:1:1]                     | passed | 0.00085 seconds |
+./spec/models/merchant_spec.rb[1:1:1]                 | passed | 0.00974 seconds |
+./spec/requests/api/v1/customers_request_spec.rb[1:1] | failed | 0.00085 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:1]     | passed | 0.01723 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:2]     | passed | 0.07314 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:1] | passed | 0.02461 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:2] | passed | 0.0157 seconds  |

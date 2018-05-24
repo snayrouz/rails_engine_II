@@ -185,47 +185,8 @@
       "/Users/samnayrouz/Projects/rails_engine_II/app/helpers/application_helper.rb": [
         1,
         null
-      ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/models/item.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/models/merchant.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/items_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1527125109
+    "timestamp": 1527125869
   }
 }
