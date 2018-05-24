@@ -1,22 +1,39 @@
 require 'csv'
 
-namespace :import_csv do
+task :import => [:environment] do
 
-  task merchants: :environment do
-    csv_text = File.read('./data/merchants.csv')
-    csv = CSV.parse(csv_text, :headers => true)
-    csv.each do |row|
-      Merchant.create!(row.to_hash)
-    end
+  merchants = "./db/data/merchants.csv"
+
+  CSV.foreach(merchants, :headers => :true) do |row|
+    m = Merchant.new
+    m.name = row['name']
+    m.created_at = row['created_at']
+    m.updated_at = row['updated_at']
+    m.save!
   end
 
-  task items: :environment do
-    csv_text = File.read('./data/items.csv')
-    csv = CSV.parse(csv_text, :headers => true)
-    csv.each do |row|
-      Item.create!(row.to_hash)
-    end
+  customers = "./db/data/customers.csv"
+
+  CSV.foreach(customers, :headers => :true) do |row|
+    c = Customer.new
+    c.first_name = row['first_name']
+    c.last_name = row['last_name']
+    c.created_at = row['created_at']
+    c.updated_at = row['updated_at']
+    c.save!
   end
 
-  task all: [:merchants, :items]
+  items = "./db/data/items.csv"
+
+  CSV.foreach(items, :headers => :true) do |row|
+    i = Item.new
+    i.name = row['name']
+    i.description = row['description']
+    i.unit_price = row['unit_price']
+    i.merchant_id = row['merchant_id']
+    i.created_at = row['created_at']
+    i.updated_at = row['updated_at']
+    i.save!
+  end
+
 end
