@@ -1,13 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe  "Invoices API" do
+RSpec.describe "Invoices API" do
   it "returns a list of invoices" do
-    merchant = create(:merchant)
-    customer = create(:customer)
+    create_list(:invoice, 5)
 
-    create_list(:invoice, 5, merchant_id: merchant.id, customer_id: customer.id)
+    get "/api/v1/invoices"
 
-    get '/api/v1/invoices'
+    expect(response).to be_success
 
     invoices = JSON.parse(response.body)
     invoice = invoices.first

@@ -188,7 +188,7 @@
       ],
       "/Users/samnayrouz/Projects/rails_engine_II/app/models/customer.rb": [
         1,
-        null,
+        1,
         null
       ],
       "/Users/samnayrouz/Projects/rails_engine_II/app/models/invoice.rb": [
@@ -205,9 +205,10 @@
       "/Users/samnayrouz/Projects/rails_engine_II/app/models/merchant.rb": [
         1,
         1,
+        1,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
         1,
@@ -225,7 +226,7 @@
         1,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
         1,
@@ -248,6 +249,6 @@
         null
       ]
     },
-    "timestamp": 1527780503
+    "timestamp": 1527797224
   }
 }

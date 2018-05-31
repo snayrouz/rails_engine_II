@@ -36,4 +36,16 @@ task :import => [:environment] do
     i.save!
   end
 
+  invoices = "./db/data/invoices.csv"
+
+  CSV.foreach(invoices, :headers => :true) do |row|
+    iv = Invoice.new
+    iv.merchant_id = row['merchant_id']
+    iv.customer_id = row['customer_id']
+    iv.status = row['status']
+    iv.created_at = row['created_at']
+    iv.updated_at = row['updated_at']
+    iv.save!
+  end
+
 end
