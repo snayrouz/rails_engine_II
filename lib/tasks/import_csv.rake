@@ -1,51 +1,38 @@
 require 'csv'
 
-task :import => [:environment] do
+namespace :import_csv do
 
-  merchants = "./db/data/merchants.csv"
-
-  CSV.foreach(merchants, :headers => :true) do |row|
-    m = Merchant.new
-    m.name = row['name']
-    m.created_at = row['created_at']
-    m.updated_at = row['updated_at']
-    m.save!
+  task customers: :environment do
+    csv_text = File.read('./db/data/customers.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Customer.create!(row.to_hash)
+    end
   end
 
-  customers = "./db/data/customers.csv"
-
-  CSV.foreach(customers, :headers => :true) do |row|
-    c = Customer.new
-    c.first_name = row['first_name']
-    c.last_name = row['last_name']
-    c.created_at = row['created_at']
-    c.updated_at = row['updated_at']
-    c.save!
+  task merchants: :environment do
+    csv_text = File.read('./db/data/merchants.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Merchant.create!(row.to_hash)
+    end
   end
 
-  items = "./db/data/items.csv"
-
-  CSV.foreach(items, :headers => :true) do |row|
-    i = Item.new
-    i.name = row['name']
-    i.description = row['description']
-    i.unit_price = row['unit_price']
-    i.merchant_id = row['merchant_id']
-    i.created_at = row['created_at']
-    i.updated_at = row['updated_at']
-    i.save!
+  task invoices: :environment do
+    csv_text = File.read('./db/data/invoices.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Invoice.create!(row.to_hash)
+    end
   end
 
-  invoices = "./db/data/invoices.csv"
-
-  CSV.foreach(invoices, :headers => :true) do |row|
-    iv = Invoice.new
-    iv.merchant_id = row['merchant_id']
-    iv.customer_id = row['customer_id']
-    iv.status = row['status']
-    iv.created_at = row['created_at']
-    iv.updated_at = row['updated_at']
-    iv.save!
+  task items: :environment do
+    csv_text = File.read('./db/data/items.csv')
+    csv = CSV.parse(csv_text, :headers => true)
+    csv.each do |row|
+      Item.create!(row.to_hash)
+    end
   end
 
+  task all: [:customers, :merchants, :invoices, :items]
 end
