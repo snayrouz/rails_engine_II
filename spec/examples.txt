@@ -1,13 +1,13 @@
 example_id                                            | status  | run_time        |
 ----------------------------------------------------- | ------- | --------------- |
-./spec/models/customer_spec.rb[1:1]                   | pending | 0.00003 seconds |
-./spec/models/invoice_spec.rb[1:1]                    | pending | 0.00002 seconds |
-./spec/models/item_spec.rb[1:1:1]                     | passed  | 0.02682 seconds |
-./spec/models/merchant_spec.rb[1:1:1]                 | passed  | 0.03657 seconds |
-./spec/requests/api/v1/customers_request_spec.rb[1:1] | passed  | 0.03879 seconds |
-./spec/requests/api/v1/customers_request_spec.rb[1:2] | passed  | 0.06608 seconds |
-./spec/requests/api/v1/invoice_request_spec.rb[1:1]   | failed  | 0.49723 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:1]     | passed  | 0.03963 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:2]     | passed  | 0.0753 seconds  |
-./spec/requests/api/v1/merchants_request_spec.rb[1:1] | passed  | 0.13822 seconds |
-./spec/requests/api/v1/merchants_request_spec.rb[1:2] | passed  | 0.06523 seconds |
+./spec/models/customer_spec.rb[1:1]                   | pending | 0.00001 seconds |
+./spec/models/invoice_spec.rb[1:1]                    | pending | 0.00001 seconds |
+./spec/models/item_spec.rb[1:1:1]                     | passed  | 0.02756 seconds |
+./spec/models/merchant_spec.rb[1:1:1]                 | passed  | 0.02951 seconds |
+./spec/requests/api/v1/customers_request_spec.rb[1:1] | passed  | 0.06443 seconds |
+./spec/requests/api/v1/customers_request_spec.rb[1:2] | passed  | 0.03715 seconds |
+./spec/requests/api/v1/invoices_request_spec.rb[1:1]  | failed  | 0.45368 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:1]     | passed  | 0.10693 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:2]     | passed  | 0.04568 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:1] | passed  | 0.08981 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:2] | passed  | 0.03409 seconds |

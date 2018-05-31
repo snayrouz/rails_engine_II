@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-05-31T14:07:04-06:00">2018-05-31T14:07:04-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-05-31T14:22:39-06:00">2018-05-31T14:22:39-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>22</b> files in total.
-    <b>68</b> relevant lines. 
-    <span class="green"><b>68</b> lines covered</span> and
+    <b>72</b> relevant lines. 
+    <span class="green"><b>72</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -103,9 +103,9 @@
       <tr>
         <td class="strong"><a href="#0e141178d7b293624597dda49f826033617c2e9e" class="src_link" title="app/models/customer.rb">app/models/customer.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>5</td>
         <td>3</td>
-        <td>2</td>
-        <td>2</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -113,9 +113,9 @@
       <tr>
         <td class="strong"><a href="#610c895004159f06745c14282b965e230f768e59" class="src_link" title="app/models/invoice.rb">app/models/invoice.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>6</td>
         <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -123,9 +123,9 @@
       <tr>
         <td class="strong"><a href="#f69e5019a6f37fe37e7d5e62b76999a9212e18c2" class="src_link" title="app/models/item.rb">app/models/item.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>5</td>
         <td>3</td>
-        <td>2</td>
-        <td>2</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -133,9 +133,9 @@
       <tr>
         <td class="strong"><a href="#d94498cc9a3966a26e4e509fa93cda0581fbfebb" class="src_link" title="app/models/merchant.rb">app/models/merchant.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>6</td>
         <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>4</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -590,8 +590,8 @@
     <h3>app/models/customer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -608,10 +608,22 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  has_many :invoices</code>
+          <code class="ruby">  validates_presence_of :first_name, :last_name</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :invoices</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -627,8 +639,8 @@
     <h3>app/models/invoice.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -645,16 +657,28 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
+          <code class="ruby">  validates_presence_of :status</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
           <code class="ruby">  belongs_to :customer</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">  belongs_to :merchant</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -670,8 +694,8 @@
     <h3>app/models/item.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -688,10 +712,22 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :merchant</code>
+          <code class="ruby">  validates_presence_of :name, :description</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  belongs_to :merchant</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -707,8 +743,8 @@
     <h3>app/models/merchant.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -725,16 +761,28 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
+          <code class="ruby">  validates_presence_of :name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
           <code class="ruby">  has_many :items</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">  has_many :invoices</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
