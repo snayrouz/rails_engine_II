@@ -12,6 +12,8 @@ namespace :import_csv do
     end
   end
 
+  puts "Seeded customers!"
+
   task merchants: :environment do
     csv_text = File.read('./db/data/merchants.csv')
     csv = CSV.parse(csv_text, :headers => true)
@@ -19,6 +21,8 @@ namespace :import_csv do
       Merchant.create!(row.to_hash)
     end
   end
+
+  puts "Seeded merchants!"
 
   task invoices: :environment do
     csv_text = File.read('./db/data/invoices.csv')
@@ -28,6 +32,8 @@ namespace :import_csv do
     end
   end
 
+  puts "Seeded invoices!"
+
   task items: :environment do
     csv_text = File.read('./db/data/items.csv')
     csv = CSV.parse(csv_text, :headers => true)
@@ -36,7 +42,9 @@ namespace :import_csv do
     end
   end
 
+  puts "Seeded items!"
+
   task all: [:customers, :merchants, :invoices, :items]
 
-  puts "Successfully seeded data"
+  puts "Successfully seeded database. Open up the rails console!"
 end

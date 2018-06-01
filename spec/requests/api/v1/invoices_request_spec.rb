@@ -1,8 +1,13 @@
 require 'rails_helper'
 
+
 RSpec.describe "Invoices API" do
   it "returns all invoices" do
-    create_list(:invoice, 3)
+    merchant = create(:merchant)
+    customer = create(:customer)
+
+    create_list(:invoice, 3, merchant_id: merchant.id, customer_id: customer.id)
+
 
     get "/api/v1/invoices"
 
