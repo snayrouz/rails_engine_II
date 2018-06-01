@@ -222,7 +222,7 @@
         1,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
         1,
@@ -240,7 +240,7 @@
         1,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
         1,
@@ -263,6 +263,6 @@
         null
       ]
     },
-    "timestamp": 1527818110
+    "timestamp": 1527819239
   }
 }

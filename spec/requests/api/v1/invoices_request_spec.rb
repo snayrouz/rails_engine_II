@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Invoices API" do
-  it "sends a list of invoices" do
+  it "returns a list of all invoices" do
     merchant = create(:merchant)
     customer = create(:customer)
 
