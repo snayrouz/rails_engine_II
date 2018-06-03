@@ -17,4 +17,16 @@ RSpec.describe "Transactions API" do
     expect(transaction).to have_key("credit_card_expiration_date")
     expect(transaction).to have_key("success")
   end
+
+  it "can return a single transaction by id" do
+    id = create(:transaction).id
+
+    get "/api/v1/transactions/#{id}"
+
+    expect(response).to be_success
+
+    transaction = JSON.parse(response.body)
+
+    expect(transaction["id"]).to eq(id)
+  end
 end

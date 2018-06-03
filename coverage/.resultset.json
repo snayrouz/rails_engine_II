@@ -229,6 +229,11 @@
         1,
         null
       ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/models/transaction.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
@@ -281,6 +286,6 @@
         null
       ]
     },
-    "timestamp": 1527995416
+    "timestamp": 1527995659
   }
 }
