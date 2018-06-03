@@ -15,7 +15,7 @@ RSpec.describe "Transactions API" do
     expect(transaction).to have_key("id")
     expect(transaction).to have_key("credit_card_number")
     expect(transaction).to have_key("credit_card_expiration_date")
-    expect(transaction).to have_key("success")
+    expect(transaction).to have_key("result")
   end
 
   it "can return a single transaction by id" do
