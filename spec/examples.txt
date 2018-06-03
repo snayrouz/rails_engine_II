@@ -1,25 +1,28 @@
-example_id                                                | status | run_time        |
---------------------------------------------------------- | ------ | --------------- |
-./spec/models/customer_spec.rb[1:1:1]                     | passed | 0.03515 seconds |
-./spec/models/customer_spec.rb[1:2:1:1]                   | passed | 0.04696 seconds |
-./spec/models/customer_spec.rb[1:2:2:1]                   | passed | 0.02848 seconds |
-./spec/models/invoice_item_spec.rb[1:1:1]                 | passed | 0.03264 seconds |
-./spec/models/invoice_item_spec.rb[1:1:2]                 | passed | 0.03623 seconds |
-./spec/models/invoice_spec.rb[1:1:1]                      | passed | 0.02681 seconds |
-./spec/models/invoice_spec.rb[1:1:2]                      | passed | 0.03807 seconds |
-./spec/models/invoice_spec.rb[1:2:1:1]                    | passed | 0.04847 seconds |
-./spec/models/item_spec.rb[1:1:1]                         | passed | 0.03665 seconds |
-./spec/models/item_spec.rb[1:2:1:1]                       | passed | 0.05001 seconds |
-./spec/models/item_spec.rb[1:2:2:1]                       | passed | 0.02953 seconds |
-./spec/models/merchant_spec.rb[1:1:1]                     | passed | 0.03605 seconds |
-./spec/models/merchant_spec.rb[1:2:1:1]                   | passed | 0.0293 seconds  |
-./spec/requests/api/v1/customers_request_spec.rb[1:1]     | passed | 0.04805 seconds |
-./spec/requests/api/v1/customers_request_spec.rb[1:2]     | passed | 0.05889 seconds |
-./spec/requests/api/v1/invoice_items_request_spec.rb[1:1] | failed | 0.38101 seconds |
-./spec/requests/api/v1/invoice_items_request_spec.rb[1:2] | failed | 0.4247 seconds  |
-./spec/requests/api/v1/invoices_request_spec.rb[1:1]      | passed | 0.07182 seconds |
-./spec/requests/api/v1/invoices_request_spec.rb[1:2]      | passed | 0.14048 seconds |
-./spec/requests/api/v1/items_request_spec.rb[1:1]         | passed | 0.0632 seconds  |
-./spec/requests/api/v1/items_request_spec.rb[1:2]         | passed | 0.06068 seconds |
-./spec/requests/api/v1/merchants_request_spec.rb[1:1]     | passed | 0.0619 seconds  |
-./spec/requests/api/v1/merchants_request_spec.rb[1:2]     | passed | 0.05317 seconds |
+example_id                                                | status  | run_time        |
+--------------------------------------------------------- | ------- | --------------- |
+./spec/models/customer_spec.rb[1:1:1]                     | passed  | 0.03078 seconds |
+./spec/models/customer_spec.rb[1:2:1:1]                   | passed  | 0.02904 seconds |
+./spec/models/customer_spec.rb[1:2:2:1]                   | passed  | 0.04035 seconds |
+./spec/models/invoice_item_spec.rb[1:1:1]                 | passed  | 0.04101 seconds |
+./spec/models/invoice_item_spec.rb[1:1:2]                 | passed  | 0.03231 seconds |
+./spec/models/invoice_spec.rb[1:1:1]                      | passed  | 0.04872 seconds |
+./spec/models/invoice_spec.rb[1:1:2]                      | passed  | 0.04744 seconds |
+./spec/models/invoice_spec.rb[1:2:1:1]                    | passed  | 0.05807 seconds |
+./spec/models/item_spec.rb[1:1:1]                         | passed  | 0.02964 seconds |
+./spec/models/item_spec.rb[1:2:1:1]                       | passed  | 0.03012 seconds |
+./spec/models/item_spec.rb[1:2:2:1]                       | passed  | 0.0315 seconds  |
+./spec/models/merchant_spec.rb[1:1:1]                     | passed  | 0.04208 seconds |
+./spec/models/merchant_spec.rb[1:2:1:1]                   | passed  | 0.03111 seconds |
+./spec/models/transaction_spec.rb[1:1]                    | pending | 0.00002 seconds |
+./spec/requests/api/v1/customers_request_spec.rb[1:1]     | passed  | 0.0427 seconds  |
+./spec/requests/api/v1/customers_request_spec.rb[1:2]     | passed  | 0.0446 seconds  |
+./spec/requests/api/v1/invoice_items_request_spec.rb[1:1] | pending | 0.00001 seconds |
+./spec/requests/api/v1/invoice_items_request_spec.rb[1:2] | pending | 0.00001 seconds |
+./spec/requests/api/v1/invoices_request_spec.rb[1:1]      | passed  | 0.0577 seconds  |
+./spec/requests/api/v1/invoices_request_spec.rb[1:2]      | passed  | 0.06245 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:1]         | passed  | 0.12473 seconds |
+./spec/requests/api/v1/items_request_spec.rb[1:2]         | passed  | 0.06421 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:1]     | passed  | 0.07795 seconds |
+./spec/requests/api/v1/merchants_request_spec.rb[1:2]     | passed  | 0.10569 seconds |
+./spec/requests/api/v1/transactions_request_spec.rb[1:1]  | failed  | 0.42978 seconds |
+./spec/requests/api/v1/transactions_request_spec.rb[1:2]  | failed  | 0.42988 seconds |
