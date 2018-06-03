@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Customers API" do
-  it "returns all customers" do
+  it "can return a list of all customers" do
     create_list(:customer, 3)
 
     get "/api/v1/customers"
@@ -17,7 +17,7 @@ RSpec.describe "Customers API" do
     expect(customer).to have_key("last_name")
   end
 
-  it "can get one customer by id" do
+  it "can return a single customer by id" do
     id = create(:customer).id
 
     get "/api/v1/customers/#{id}"

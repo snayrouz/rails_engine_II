@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Merchants API" do
-  it "returns all merchants" do
+  it "can return a list of all merchants" do
     create_list(:merchant, 10)
 
     get "/api/v1/merchants"
@@ -16,7 +16,7 @@ RSpec.describe "Merchants API" do
     expect(merchant).to have_key("name")
   end
 
-  it "can show a merchant by id" do
+  it "can return a single merchant by id" do
     id = create(:merchant).id
 
     get "/api/v1/merchants/#{id}"

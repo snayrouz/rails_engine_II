@@ -18,7 +18,7 @@ RSpec.describe "Items API" do
     expect(item).to have_key("unit_price")
   end
 
-  it "can return one item by id" do
+  it "can return a single item by id" do
     id = create(:item).id
 
     get "/api/v1/items/#{id}"

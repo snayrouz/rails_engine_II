@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Invoices API" do
   it "returns a list of all invoices" do
-    list = create_list(:invoice, 3)
+    create_list(:invoice, 3)
 
     get "/api/v1/invoices"
 
