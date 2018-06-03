@@ -7,8 +7,8 @@ RSpec.describe "Invoices API" do
     get "/api/v1/invoices"
 
     expect(response).to be_success
-    invoices = JSON.parse(response.body)
 
+    invoices = JSON.parse(response.body)
     invoice = invoices.first
 
     expect(invoices.count).to eq(3)

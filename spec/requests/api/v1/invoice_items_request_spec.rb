@@ -19,7 +19,7 @@ RSpec.describe "Invoice Item API" do
     expect(invoice_item).to have_key("unit_price")
   end
 
-  it "can return one invoice item by id" do
+  it "can return a single invoice item by id" do
     id = create(:invoice_item).id
 
     get "/api/v1/invoice_items/#{id}"
