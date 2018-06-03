@@ -1,17 +1,15 @@
 require 'rails_helper'
+require 'pry'
 
 RSpec.describe "Invoices API" do
   it "returns a list of all invoices" do
-    merchant = create(:merchant)
-    customer = create(:customer)
-
-    create_list(:invoice, 3, merchant_id: merchant.id, customer_id: customer.id)
-
+    list = create_list(:invoice, 3)
+    binding.pry
     get "/api/v1/invoices"
 
     expect(response).to be_success
-
     invoices = JSON.parse(response.body)
+
     invoice = invoices.first
 
     expect(invoices.count).to eq(3)
