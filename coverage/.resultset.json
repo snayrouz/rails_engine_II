@@ -180,6 +180,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null
@@ -263,7 +264,7 @@
         null,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/items_controller.rb": [
         1,
         1,
         1,
@@ -274,7 +275,29 @@
         null,
         null
       ],
-      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/items_controller.rb": [
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/invoice_items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/transactions_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/samnayrouz/Projects/rails_engine_II/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
         1,
@@ -286,6 +309,6 @@
         null
       ]
     },
-    "timestamp": 1527995855
+    "timestamp": 1527996284
   }
 }
