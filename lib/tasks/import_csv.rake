@@ -72,4 +72,19 @@ task :import => [:environment] do
 
   puts "Successfully seeded Invoice Items!"
 
+  transactions = "./db/data/transactions.csv"
+
+  CSV.foreach(transactions, :headers => :true) do |row|
+    t = Transaction.new
+    t.invoice_id = row['invoice_id']
+    t.credit_card_number = row['credit_card_number']
+    t.result = row['result']
+    t.created_at = row['created_at']
+    t.updated_at = row['updated_at']
+    t.save!
+  end
+
+  puts "Successfully seeded Transactions!"
+  puts "You've seeded the data into the database. Go on and code!"
+
 end
