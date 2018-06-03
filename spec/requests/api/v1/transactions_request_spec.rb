@@ -29,4 +29,17 @@ RSpec.describe "Transactions API" do
 
     expect(transaction["id"]).to eq(id)
   end
+
+  context "Relationship Endpoints" do
+    it "returns the related invoice" do
+      transaction = create(:transaction)
+
+      get "/api/v1/transactions/#{transaction.id}/invoice"
+
+      invoice = JSON.parse(response.body)
+
+      expect(response).to be_success
+      expect(invoice["id"]).to eq(transaction.invoice_id)
+    end
+  end
 end
