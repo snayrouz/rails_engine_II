@@ -1,5 +1,6 @@
 require 'csv'
 
+desc "Import data from csv file"
 task :import => [:environment] do
 
   merchants = "./db/data/merchants.csv"
@@ -12,6 +13,8 @@ task :import => [:environment] do
     m.save!
   end
 
+  puts "Successfully seeded Merchants!"
+
   customers = "./db/data/customers.csv"
 
   CSV.foreach(customers, :headers => :true) do |row|
@@ -22,6 +25,22 @@ task :import => [:environment] do
     c.updated_at = row['updated_at']
     c.save!
   end
+
+  puts "Successfully seeded Customers!"
+
+  invoices = "./db/data/invoices.csv"
+
+  CSV.foreach(invoices, :headers => :true) do |row|
+    i = Invoice.new
+    i.customer_id = row['customer_id']
+    i.merchant_id = row['merchant_id']
+    i.status = row['status']
+    i.created_at = row['created_at']
+    i.updated_at = row['updated_at']
+    i.save!
+  end
+
+  puts "Successfully seeded Invoices!"
 
   items = "./db/data/items.csv"
 
@@ -35,5 +54,7 @@ task :import => [:environment] do
     i.updated_at = row['updated_at']
     i.save!
   end
+
+  puts "Successfully seeded Items!"
 
 end
